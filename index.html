@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+   
+</head>
+<body>
+    <button onclick="debuguj()">debugaj</button>
+    <div class="mainDiv">
+            <!-- lewy div -->
+        <div class='leftDiv' >
+        
+            <h1 class="teamNameL">Lewi</h1>
+
+            <button onclick="showTeamChangeInputL()">Zmien nazwe zespołu</button>
+            <input type="text" name="nowi gracze" maxlength="20" id="teamNameInputL" >
+            <button id="acceptL" onclick="changeTeamNameL()">Zatwierdż</button>
+
+            <h1></h1>
+
+            <button onclick="addPlayerL()">Dodaj gracza</button>
+
+            <br>
+
+            <input type="text" name="nowi gracze" maxlength="20" id="playerInputL">
+            <ol id="listaL">
+
+            </ol>
+        </div>
+        <!-- prawy div -->
+        <div class='rightDiv' >
+        
+            <h1 class="teamNameR">Prawi</h1>
+
+            <button onclick="showTeamChangeInputR()">Zmien nazwe zespołu</button>
+            <input type="text" name="nowi gracze" maxlength="20" id="teamNameInputR" >
+            <button id="acceptR" onclick="changeTeamNameR()">Zatwierdż</button>
+            
+            <h1></h1>
+
+            <button onclick="addPlayerR()">Dodaj gracza</button>
+
+            <br>
+            
+            <input type="text" name="nowi gracze" maxlength="20" id="playerInputR">
+            <ol id="listaR">
+
+            </ol>
+        </div>
+    </div>
+
+
+    <div class="lowerDiv" >
+        <!-- <button>Rozpocznij mecz</button> -->
+        <br>
+        <button onclick="showAfterEnding()">Zakończ mecz</button>
+
+        <div class="afterEnding" id="afterEnding">
+            <h3 >Który zespół wygrał?</h3>
+           
+            <div class="radioButtony">
+                <div class="radioButtons">
+                    <input type="radio" name="team" value="RTW" id="RTW">
+                    <p class="teamNameL">Lewi</p>
+                </div>
+            
+                <div class="radioButtons">
+                    <input type="radio" name="team" value="LTW" id="LTW">
+                    <p class="teamNameR">Prawi</p>
+                </div>
+            </div>    
+        </div>
+            <br>
+            
+            <button onclick="chceckEnd()">Zatwierdż</button> 
+    </div>
+    
+    <script src="script.js"></script>
+    <div>
+        <table id="table">
+            <tr>
+                <th>Gracz</th>
+                <th>Mecze</th>
+                <th>Wygrane</th>
+                <th>% wygranych</th>
+                <th>ELO</th>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>2</td>
+                <td>5</td>
+                <td>4</td>
+                <td>1</td>
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>4</td>
+                <td>1</td>
+                <td>3</td>
+                <td>1</td>
+                
+            </tr>
+        </table>
+
+
+
+
+    </div>
+</body>
+</html>

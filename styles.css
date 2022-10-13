@@ -1,0 +1,57 @@
+body{
+    
+    /* background-image: url('perelka.jpeg'); */
+}
+.leftdiv.rightDiv{
+    position: relative;
+    left: 10%;
+    top:20%;
+}
+.leftDiv{
+    padding-right: 300px;
+  
+}
+.rightdiv{
+    margin-left: 30%;
+}
+#teamNameInputL,#teamNameInputR,#acceptL,#acceptR{
+    display: none;
+}
+h1{
+    color: blue;
+}
+.mainDiv{
+    display: flex;
+}
+
+.lowerDiv{
+    position: relative;
+    left: 40%;
+
+}
+ol{
+    color: blue;
+}
+.afterEnding{
+    display:block ; 
+    
+}
+.radioButtons{
+    padding: 20px;
+}
+.radioButtony{
+    display: flex;
+}
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td,th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
